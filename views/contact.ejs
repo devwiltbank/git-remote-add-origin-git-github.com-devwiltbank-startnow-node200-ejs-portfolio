@@ -2,7 +2,7 @@
   <head>
     <title>Contact Devin</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
     <div class='text-center'>
@@ -13,10 +13,10 @@
         <div class='col-15'>
         </div>
         <div class='col-sm'>
-            <a href="/">Home Page</a>
-          <p>Feel free to leave me a note or request to be contacted.  I'd love to hear from you!</p>
+            <a class='btn' href="/">Home Page</a>
+          <p>Send an email to Devin.</p>
         </div>
-        <div class='col-sm text-white'>  
+        <div class='col-sm text-dark'>  
           <form action="/thanks" method="POST">
                 <div class='form-group'>
                   <label for="firstName">First Name:</label>
@@ -29,10 +29,10 @@
                 <div class='form-group'>
                   <label for="email">Email:</label>
                   <input class=' form-control form-control-sm shadow-sm bg-white rounded' id="email" name="email" type="text">
-                  <small id="emailHelp" class="form-text text-light">Your information will not be shared with anyone.</small>
+                  <small id="emailHelp" class="form-text text-muted">Your information will not be shared with anyone.</small>
                 </div>      
                 <div class='text-center'>
-                  <input type="submit" class='btn btn-light' />
+                  <input type="submit" class='btn btn-dark' />
                 </div>
           </form>
         </div>
