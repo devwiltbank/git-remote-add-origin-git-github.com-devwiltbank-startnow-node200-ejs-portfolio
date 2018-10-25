@@ -9,11 +9,12 @@ const app           = express();
 app.use(morgan('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
-
+app.use(express.static("./"));
+app.use('./public', express.static(__dirname + "./public"));
 // Here we're setting the views directory to be ./views
 // thereby letting the app know where to find the template files
 app.set('views', './views');
-
+app.set('public', './public');
 // Here we're setting the default engine to be ejs
 // note we don't need to require it, express will do that for us
 app.set('view engine', 'ejs');
